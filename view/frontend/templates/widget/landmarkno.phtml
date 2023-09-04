@@ -1,0 +1,19 @@
+<?php
+/**
+ * @var \Webkul\Module\Block\Customer\Widget\Landmarkin $block
+ */
+?>
+<div class="field field-name-landmarkno">
+    <label class="label" for="<?= $block->escapeHtml('landmark') ?>">
+        <span><?= $block->escapeHtml(__('Landmark.')) ?></span>
+    </label>
+    <div class="control">
+        <input type="text"
+            id="<?= $block->escapeHtml('landmark') ?>"
+            name="<?= $block->escapeHtml('landmark') ?>"
+            value="<?= $block->escapeHtml($block->getValue()) ?>"
+            title="<?= $block->escapeHtml(__('Landmark')) ?>"
+            class="input-text"
+        >
+    </div>
+</div>
